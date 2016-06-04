@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  *Student Id: 300821245
  *Description: This program calls instance variables from Hero class and SuperHero class
  *and print Fight and Show method(They come from Hero class ), and ShowPowers(It comes from SuperHero class).
- *version : 0.0.2- Added the SuperHero class
+ *version : 0.0.3- Added private instance variable and public property int the SuperHero class
  *
  */
 

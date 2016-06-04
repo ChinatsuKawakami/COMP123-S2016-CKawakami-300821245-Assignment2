@@ -15,5 +15,28 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
      */
     class SuperHero:Hero
     {
+        //PRIVATE INSTANCE VARIABLES********************************************
+        private string[] _superPowers;
+        
+        //PUBLIC PROPERTY*****************************************************
+       /**
+        * <summary>
+        * This property, SuperPowers includes a getter and setter 
+        * for the private instance variable _superPowers
+        * </summary>
+        * @property SuperPowers
+        */
+        
+        public string[] SuperPowers
+        {
+            get
+            {
+                return _superPowers;
+            }
+            set
+            {
+                _superPowers = value;
+            }
+        }//close Public Property
     }
 }
