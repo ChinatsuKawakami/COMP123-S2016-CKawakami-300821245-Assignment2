@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  *Student Id: 300821245
  *Description: This program calls instance variables from Hero class and SuperHero class
  *and print Fight and Show method(They come from Hero class ), and ShowPowers(It comes from SuperHero class).
- *version : 0.0.4- Added constructor in the SuperHero class
+ *version : 0.0.5- Added _generateRandomPowers and ShowPowers in the SuperHero class
  *
  */
 
@@ -36,6 +36,10 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             //call Show method
             hero1.Show();
             hero1.Fight();
+
+            SuperHero super = new SuperHero("Jhon");
+            super.ShowPowers();
+           // super.Show();Same parameters appers with hero1 in Hero class
 
 
         }
