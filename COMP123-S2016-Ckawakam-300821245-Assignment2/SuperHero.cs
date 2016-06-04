@@ -38,5 +38,23 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
                 _superPowers = value;
             }
         }//close Public Property
+
+        //CONSTRUCTOR****************************************************************************
+        /**
+         * <summary>
+         * This is the empty default Constructor for the SuperHero class
+         * </summary>
+         * @constructor SuperHero
+         * @extends Hero
+         * @params {string}name
+         */
+        SuperHero(string name)
+            :base(name)
+        {
+            
+            _generateRandomPowers();
+        }
+
+        //
     }
 }
