@@ -55,7 +55,7 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             : base(name)
         {
 
-            this.Name = name;
+            //this.Name = name;
             _generateRandomPowers();
         }
 
@@ -72,37 +72,34 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
         {
             //This system is to choose only three parameters randomly
             Random ram = new Random();
-           
+
             Random param = new Random();
+
+
+            _superPowers = new string[3];
+            List<string> item = new List<string> { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Contorol" };
+
+
+
            
-            int superSpeed = param.Next(1, 101);
-            int superStrength = param.Next(1, 101);
-            int bodyArmour = param.Next(1, 101);
-            int flight = param.Next(1, 101);
-            int fireGeneration = param.Next(1, 101);
-            int weatherContorol = param.Next(1, 101);
-
-
-            List<int> item = new List<int> { superSpeed, superStrength, bodyArmour, flight, fireGeneration,weatherContorol };
-    /* item.Add(superSpeed);
-     item.Add(superStrength);
-     item.Add(bodyArmour);
-     item.Add(flight);
-     item.Add(fireGeneration);
-     item.Add(weatherContorol);*/
-
-     int x = param.Next(0, 6);// between 0, 1, 2, 3, 4, 5 
+            int x = ram.Next(0, 6);// between 0, 1, 2, 3, 4, 5 
             int i = 0;
             do
             {
-             
-                _superPowers[i] = Convert.ToString(item[x]);
-                item.Remove(item[x]);
-                x = param.Next(0, 6 - i);
+                
+                _superPowers[i] = item.ElementAt(x);
+                item.RemoveAt(x);
                 i++;
+                x = ram.Next(0, 6 - i);
+
+
             } while (i < 3);
          
+
         }//close method
+
+
+
 
         //Public Method*******************************************************
         /**
@@ -125,6 +122,7 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
         }
     }
 }
+
 
 
 
