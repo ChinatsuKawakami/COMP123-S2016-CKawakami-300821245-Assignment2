@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  *Student Id: 300821245
  *Description: This program calls instance variables from Hero class and SuperHero class
  *and print Fight and Show method(They come from Hero class ), and ShowPowers(It comes from SuperHero class).
- *version : 0.0.9- Added UnitTestForMethod to check _generateRandomPowers method
+ *version : 0.0.10- updated UnitTest for generateRandomPowersTestMethod()
  *
  */
 

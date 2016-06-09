@@ -122,38 +122,14 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
         }
 
 
-//This is Public Method for UnitTest***************************************************************************************************************************
-        public void GenerateRandomPowers()
-        {
-            //This system is to choose only three parameters randomly
-            Random ram = new Random();
-
-
-
-
-            _superPowers = new string[3];
-            List<string> item = new List<string> { "Super Speed", "Super Strength", "Body Armour", "Flight", "Fire Generation", "Weather Contorol" };
-
-
-
-
-            int x = ram.Next(0, 6);// between 0, 1, 2, 3, 4, 5 
-            int i = 0;
-            do
-            {
-
-                _superPowers[i] = item.ElementAt(x);
-                item.RemoveAt(x);
-                i++;
-                x = ram.Next(0, 6 - i);
-
-
-            } while (i < 3);
-
 
         }//close method
+
+
+
+     
     }
-}
+
 
 
 
