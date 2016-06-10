@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  *Student Id: 300821245
  *Description: This program calls instance variables from Hero class and SuperHero class
  *and print Fight and Show method(They come from Hero class ), and ShowPowers(It comes from SuperHero class).
- *version : 0.0.11- updated SuperHero and Hero class's ShowPowers and Show methods
+ *version : 0.0.12- updated UnitTest1 to add  ShowPowersTestMethod() to check ShowPowers array Length
  *
  */
 
@@ -32,14 +32,16 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
          */
         static void Main(string[] args)
         {
-            Hero hero1 = new Hero("Mike");
+            //Hero hero1 = new Hero("Mike");
             //call Show method
-            hero1.Show();
-            hero1.Fight();
+            //hero1.Show();
+            //hero1.Fight();
 
-            SuperHero super = new SuperHero("Jhon");
-           
+            SuperHero super = new SuperHero("Mary");
+
+             super.Show();
              super.ShowPowers();
+             super.Fight();
            // super.Show();Same parameters appers with hero1 in Hero class
 
 

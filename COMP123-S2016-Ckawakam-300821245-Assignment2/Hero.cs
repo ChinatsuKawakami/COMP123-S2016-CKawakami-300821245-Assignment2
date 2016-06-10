@@ -35,11 +35,11 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
         {
             get
             {
-                return _name;
+                return this._name;
             }//close get
             set
             {
-                _name = value;
+                this._name = value;
             }//close set
         }//close public Name
 

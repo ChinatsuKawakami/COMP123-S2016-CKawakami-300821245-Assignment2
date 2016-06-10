@@ -32,11 +32,11 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
         {
             get
             {
-                return _superPowers;
+                return this._superPowers;
             }
             set
             {
-                _superPowers = value;
+                this._superPowers = value;
             }
         }//close Public Property
 
@@ -55,7 +55,7 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             : base(name)
         {
 
-            //this.Name = name;
+            //this.Name = name; don't need it because this has already done in constructor of base class  
             _generateRandomPowers();
         }
 
@@ -87,12 +87,14 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             do
             {
                 
-                _superPowers[i] = item.ElementAt(x);
+                
+        
+             _superPowers[i] = item.ElementAt(x);
                 item.RemoveAt(x);
                 i++;
                 x = ram.Next(0, 6 - i);
-
-
+                
+                
             } while (i < 3);
          
 
@@ -111,16 +113,20 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
          */
         public void ShowPowers()
         {
+
+           
             for (int i = 0; i < 3; i++)
             {
 
                 {
-                    Console.WriteLine("*******************************************************");
-                    Console.WriteLine("*              Super Hero's parameters                *");
-                    Console.WriteLine("*******************************************************");
-                    Console.WriteLine("                     "+_superPowers[i]+"                   ");
-                    Console.WriteLine("*******************************************************");
-                  
+               
+                    
+                        Console.WriteLine("*******************************************************");
+                        Console.WriteLine("*              Super Hero's parameters                *");
+                        Console.WriteLine("*******************************************************");
+                        Console.WriteLine("                     " + _superPowers[i] + "                   ");
+                        Console.WriteLine("*******************************************************");
+                    
                 }
 
             }

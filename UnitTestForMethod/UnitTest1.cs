@@ -44,7 +44,7 @@ namespace UnitTestForMethod
         
 
             //Assert 
-            Assert.IsTrue(!hasDuplicatePowers);//Pass!!
+          Assert.IsTrue(!hasDuplicatePowers);//Pass!!
             
         }
         [TestMethod]
@@ -53,12 +53,14 @@ namespace UnitTestForMethod
             //Arrange
           SuperHero superHero2 = new SuperHero("Jean");
             string [] array = {superHero2.SuperPowers[0],superHero2.SuperPowers[1],superHero2.SuperPowers[2]};
+        
             //Act
-
+            int length = superHero2.SuperPowers.Length;
             //Assert
 
 
-            Assert.AreEqual(superHero2.ShowPowers(),superHero2.;
+            Assert.AreEqual(length,array.Length);//PASS!! That's shows ShowPowers Test Display Three Parameters of Super hero.
+            
            
         }
     }
