@@ -52,13 +52,13 @@ namespace UnitTestForMethod
         {
             //Arrange
           SuperHero superHero2 = new SuperHero("Jean");
-            string [] test = {superHero2.SuperPowers[0],superHero2.SuperPowers[1],superHero2.SuperPowers[2]};
+            string [] array = {superHero2.SuperPowers[0],superHero2.SuperPowers[1],superHero2.SuperPowers[2]};
             //Act
 
-            Console.WriteLine(test);
-
             //Assert
-        //    Assert.AreEqual(ShowPowersTest(superHero2),test);
+
+
+            Assert.AreEqual(superHero2.ShowPowers(),superHero2.;
            
         }
     }

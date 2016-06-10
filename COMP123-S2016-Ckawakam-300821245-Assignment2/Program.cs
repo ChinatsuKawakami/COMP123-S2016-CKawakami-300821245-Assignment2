@@ -7,11 +7,11 @@ using System.Threading.Tasks;
  *This is driver class
  *Author: Chinatsu Kawakami
  *Date :June 4th 2016
- *Date Modified: June 6th 2016
+ *Date Modified: June 10th 2016
  *Student Id: 300821245
  *Description: This program calls instance variables from Hero class and SuperHero class
  *and print Fight and Show method(They come from Hero class ), and ShowPowers(It comes from SuperHero class).
- *version : 0.0.10- updated UnitTest for generateRandomPowersTestMethod()
+ *version : 0.0.11- updated SuperHero and Hero class's ShowPowers and Show methods
  *
  */
 

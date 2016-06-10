@@ -115,7 +115,12 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             {
 
                 {
-                    Console.WriteLine(_superPowers[i]);
+                    Console.WriteLine("*******************************************************");
+                    Console.WriteLine("*              Super Hero's parameters                *");
+                    Console.WriteLine("*******************************************************");
+                    Console.WriteLine("                     "+_superPowers[i]+"                   ");
+                    Console.WriteLine("*******************************************************");
+                  
                 }
 
             }

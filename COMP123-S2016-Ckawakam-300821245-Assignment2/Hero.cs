@@ -174,7 +174,7 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
             if (_hitAttempt() == true)
             {
 
-                Console.WriteLine("!!{0} damaged {1}!!", this._name, _hitDamage());
+                Console.WriteLine("                   !!{0} damaged {1}!!          ", this._name, _hitDamage());
             }
 
         }
@@ -190,80 +190,24 @@ namespace COMP123_S2016_Ckawakam_300821245_Assignment2
          */
         public void Show()
         {
-            Console.WriteLine("\n{0} strength:{1}\n{0} speed:{2}\n{0} health:{3}", this._name, this._strength, this._speed, this._health);
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("*                    Strength                         *");
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("                 {0} strength:{1}", this._name, this._strength);
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("*                      Speed                          *");
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("                   {0} speed:{1}",this._name,this._speed);
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("                       Health                         *");
+            Console.WriteLine("*******************************************************");
+            Console.WriteLine("                   {0} health:{1}",this._name ,this._health);
+            Console.WriteLine("********************************************************");
+            Console.WriteLine();
+        
         }
 
 
-        //THEY AER METHODS FOR UNIT TEST!!!!+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        /**
-          * <summary>
-          * This method to check whether Hero object get damage or not by returning bool value
-          * </summary>
-          * @method HitAttemptTest(int)
-          * 
-          * @return {bool}
-          */
-        public bool HitAttemptTest(int getAttack)
-        {
-
-            bool hitB;
-
-            //  Random ram = new Random();
-            // int getAttack = ram.Next(0, 5);// possibility to hero character get damage is 1/5 ---between 0 - 4
-            if (getAttack == 0)
-            {
-                //??this shold be only 20% of the time
-
-                hitB = true;
-
-            }
-            else
-            {
-                hitB = false;
-            }
-
-
-            return hitB;
-        }
-
-        /**
-         * <summary>
-         * This method to check whether _hitDamage method works or not
-         * </summary>
-         * @method HitDamageTest
-         * @return {int} _hitDamage()
-         */
-        public int HitDamageTest()
-        {
-
-            return _hitDamage();
-        }
-
-        /**
-        * <summary>
-        * This method to Test for checking whether Fight method works or not in UnitTest1
-        * </summary>
-        * @method FightTest
-        * @return {string} 
-        */
-        public string FightTest()
-        {
-
-            return string.Format("!!{0} damaged {1}!!", this._name, _hitDamage());
-
-        }
-
-
-        /**
-        * <summary>
-        *This method to Test to check whether Show method works or not in UnitTest
-        * <summary>
-        * @method ToString()
-        * @return {string}
-        */
-        public override string ToString()
-        {
-            return String.Format("\n{0} strength:{1}\n{0} speed:{2}\n{0} health:{3}", this._name, this._strength, this._speed, this._health);
-        }
+        
     }
 }
